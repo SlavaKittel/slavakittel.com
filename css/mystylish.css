@@ -257,7 +257,16 @@ p {
 .box {
   background-color: rgb(197, 196, 196);
   width: 100%;
-  height: 100px;
+  height: 10vw;
   border: 0px solid rgb(2, 2, 2);
   overflow: hidden;
+}
+
+.transition {
+  position: relative;
+  transition: margin-left .4s ease;
+}
+
+.transition:hover {
+  margin-left: 100%;
 }
