@@ -249,6 +249,10 @@ input[type="checkbox"]:checked + label {
   color: #f00;
   font-style: normal;
 }
+
+
+
+
 /* ----- Start SliderHoverEffect ----- */
 
 .relative {
@@ -256,8 +260,8 @@ input[type="checkbox"]:checked + label {
 }
 
 .partStrip {
-  background-color: transparent;
-  width: 100%;
+  background-color: rgb(255, 234, 234);
+  width: 100vw;
   height: 10vw;
   border: 0 solid rgb(2, 2, 2);
   overflow: hidden;
@@ -283,3 +287,7 @@ img {
 }
 
 /* ----- End SliderHoverEffect ----- */
+
+
+
+
