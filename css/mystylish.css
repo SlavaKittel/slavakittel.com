@@ -258,7 +258,7 @@ input[type="checkbox"]:checked + label {
 
 .partStrip {
   background-color: rgb(255, 234, 234);
-  width: 90vw;
+  width: 70vw;
   height: 10vw;
   border: 0 solid rgb(2, 2, 2);
   overflow: hidden;

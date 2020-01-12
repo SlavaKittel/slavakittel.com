@@ -7,7 +7,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>SLava Kittel</title>
+  <title>Slava Kittel</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -63,10 +63,15 @@
 
   <!-- Header -->
 
+  <!-- <section class="content-section d-flex myme" data-parallax="scroll" data-image-src="img/patternfullhd2.png"
+  id="portfolio">
+    <div class="container my-auto">
+      <div class="content-section-heading text-center"> -->
+
   <div class="example-classname">
-    <header class="myme d-flex" id="home">
-      <div class="my-auto">
-      
+    <header class="content-section myme d-flex" id="home">
+      <div class="container my-auto">
+        <div class="col-lg-12">
           <div id="containerSlider">
             <div class="partStrip">
               <p>
@@ -350,7 +355,21 @@
   <script>
     $(function () {
       $.scrollify({
-        section: ".example-classname"
+        section: ".example-classname",
+        interstitialSection : "",
+        easing: "easeOutExpo",
+        scrollSpeed: 500,
+        offset : 1,
+        scrollbars: true,
+        standardScrollElements: "",
+        setHeights: true,
+        overflowScroll: true,
+        updateHash: true,
+        touchScroll: false,
+        before:function() {},
+        after:function() {},
+        afterResize:function() {},
+        afterRender:function() {}
       });
     });
   </script>
