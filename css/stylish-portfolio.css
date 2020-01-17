@@ -338,7 +338,7 @@ h6 {
     clip-path: inset(1rem); */
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(0.7);
+    transform: scale(1);
 
   }
 }
