@@ -265,6 +265,7 @@ h6 {
   overflow: hidden;
   max-width: 530px;
   margin: auto auto 1rem;
+  
 }
 
 .portfolio-item .caption {
@@ -301,9 +302,11 @@ h6 {
     margin: 0;
   }
   .portfolio-item .caption {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    /* -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
     -webkit-clip-path: inset(0px);
-    clip-path: inset(0px);
+    clip-path: inset(0px); */
+    -webkit-transition: transform  0.25s ease-out, background-color 0.7s;
+    transform: scale(1);
   }
   .portfolio-item .caption .caption-content {
     -webkit-transition: opacity 0.25s;
@@ -313,18 +316,30 @@ h6 {
     margin-bottom: 5rem;
   }
   .portfolio-item img {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    /* -webkit-transition: -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
-    clip-path: inset(-1px);
+    clip-path: inset(-1px); */
+
+    -webkit-transition: transform  0.25s ease-out, background-color 0.7s;
+    transform: scale(1);
+    
   }
   .portfolio-item:hover img {
-    -webkit-clip-path: inset(1rem);
-    clip-path: inset(1rem);
+    /* -webkit-clip-path: inset(1rem);
+    clip-path: inset(1rem); */
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(0.7);
+ 
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(255, 255, 255, 0.3);
+    /* background-color: rgba(0, 0, 0, 0.3);
     -webkit-clip-path: inset(1rem);
-    clip-path: inset(1rem);
+    clip-path: inset(1rem); */
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(0.7);
+
   }
 }
 
