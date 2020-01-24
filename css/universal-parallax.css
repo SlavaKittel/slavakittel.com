@@ -22,3 +22,17 @@
 	transform-style: preserve-3d;
 	width: 100%;
 }
+
+.containerSLAVA {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+/* .container--big {
+	height: 175vh;
+} */
+.container--fullSlava {
+	height: 100vh;
+}
+
