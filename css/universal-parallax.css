@@ -23,16 +23,14 @@
 	width: 100%;
 }
 
-.containerSLAVA {
+.container1 {
 	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
 }
-/* .container--big {
-	height: 175vh;
-} */
-.container--fullSlava {
+
+.container--full1 {
 	height: 100vh;
 }
 
