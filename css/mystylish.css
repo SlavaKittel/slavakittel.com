@@ -261,9 +261,14 @@ img {
   /* transition: margin-left 0.4s cubic-bezier(.57,-0.53,.39,1.62); */
 }
 
-#containerSlider {
-  width: 1;
-  height: 1;
+.containerSlider {
+  background-color: #f00;
+  width: 1050px;
+  position:;
+}
+
+.height100 {
+height: 50%;
 }
 
 #containerSlider:hover #leftSlide {
