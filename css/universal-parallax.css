@@ -14,8 +14,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	/* --------------------------- */
-	
-
+	position: fixed;
 	top: 0;
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
@@ -23,3 +22,17 @@
 	transform-style: preserve-3d;
 	width: 100%;
 }
+
+.containerSLAVA {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+/* .container--big {
+	height: 175vh;
+} */
+.container--fullSlava {
+	height: 100vh;
+}
+
