@@ -65,7 +65,7 @@
   </nav>
 
   <!-- Home -->
-
+ 
   <!-- <section class="content-section d-flex myme" data-parallax="scroll" data-image-src="img/patternfullhd2.png"
   id="portfolio">
     <div class="container my-auto">
@@ -116,9 +116,12 @@
 			</p>
 		</div>
 		<div class="parallax" data-parallax-image="img/patternfullhd2.png"></div>
-	</section> -->
-
-  <div class="example-classname ">
+  </section> -->
+  <div class="example-classname" >
+    <div class="parallax" style="display: flex; flex-wrap: wrap; position: relative;" data-parallax-image="img/me-2.jpg"></div>
+  </div>
+  
+  <div class="example-classname">
    <div class="parallax" data-parallax-image="img/patternfullhd2.png">
     <div class="myme d-flex" id="about">
       <div class="container text-center my-auto">
@@ -383,12 +386,14 @@
 
   <!-- Parallax for mobile -->
   <script src="js/universal-parallax.js"></script>
-	<script>
-		new universalParallax().init();
-	</script>
+  <script>
+    new universalParallax().init({
+      speed: 4
+    });
+  </script>
 
   <!-- Scrollify  -->
-  <script src="js/jquery.scrollify.js"></script>
+  <!-- <script src="js/jquery.scrollify.js"></script>
   <script>
     $(function () {
       $.scrollify({
@@ -409,7 +414,7 @@
         afterRender:function() {}
       });
     });
-  </script>
+  </script> -->
 
   <!-- Lightslider -->
   <script src="js/lightslider.js"></script>
