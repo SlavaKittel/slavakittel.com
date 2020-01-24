@@ -22,15 +22,3 @@
 	transform-style: preserve-3d;
 	width: 100%;
 }
-
-.container1 {
-	align-items: center;
-	display: flex;
-	flex-wrap: wrap;
-	position: relative;
-}
-
-.container--full1 {
-	height: 100vh;
-}
-
