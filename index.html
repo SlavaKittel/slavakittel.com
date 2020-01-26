@@ -12,8 +12,8 @@
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-   <!-- Parallax for mobile -->
-   <link href="css/universal-parallax.css" rel="stylesheet" />
+  <!-- Parallax for mobile -->
+  <link href="css/universal-parallax.css" rel="stylesheet" />
 
   <!-- Custom Fonts -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
@@ -31,9 +31,13 @@
 
 
   <!-- Navigation -->
-  
+
   <a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
+    <div class="burger-menu toggleable">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+    </div>
   </a>
   <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
@@ -71,7 +75,7 @@
   <div class="example-classname">
     <header class="content-section myme d-flex" id="home">
       <div class="container my-auto">
-        <div class="col-xl-6 col-md-6 col-lg-3" >
+        <div class="col-xl-6 col-md-6 col-lg-3">
           <div id="containerSlider">
             <div class="partStrip" style="margin: auto;">
               <p>
@@ -104,20 +108,20 @@
 
   <!-- About -->
 
-  <div class="example-classname ">  
-   <div class="parallax" data-parallax-image="img/patternfullhd2.png"></div>
-     <div class="myme d-flex" id="about">
-       <div class="container text-center my-auto">
-         <div class="col-lg-12">
-           <h2>My Skillss1</h2>
-           <p class="lead mb-5">
-             This theme features a flexible, UX friendly sidebar menu and stock
-             photos from our friends at...
-           </p>
-           <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What I Offer</a>
-         </div>
-       </div>
-     </div>   
+  <div class="example-classname ">
+    <div class="parallax" data-parallax-image="img/patternfullhd2.png"></div>
+    <div class="myme d-flex" id="about">
+      <div class="container text-center my-auto">
+        <div class="col-lg-12">
+          <h2>My Skillss1</h2>
+          <p class="lead mb-5">
+            This theme features a flexible, UX friendly sidebar menu and stock
+            photos from our friends at...
+          </p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What I Offer</a>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- End About -->
@@ -239,7 +243,7 @@
 
   <div class="example-classname">
     <section class="content-section d-flex myme" id="portfolio">
-    <div class="parallax" data-parallax-image="img/patternfullhd2.png"></div>
+      <div class="parallax" data-parallax-image="img/patternfullhd2.png"></div>
       <div class="container my-auto">
         <div class="content-section-heading text-center">
           <h3 class="text-secondary mb-0">Portfolio</h3>
@@ -375,8 +379,8 @@
 
   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
   <script src="js/jquery-1.9.1.min.js"></script>
- 
-  <script src="js/fullpage.js"></script> 
+
+  <script src="js/fullpage.js"></script>
 
   <!-- Parallax for mobile -->
   <script src="js/universal-parallax.js"></script>
@@ -392,20 +396,20 @@
     $(function () {
       $.scrollify({
         section: ".example-classname",
-        interstitialSection : "",
+        interstitialSection: "",
         easing: "easeOutExpo",
         scrollSpeed: 1100,
-        offset : 1,
+        offset: 1,
         scrollbars: false,
         standardScrollElements: "",
         setHeights: true,
         overflowScroll: true,
         updateHash: true,
         touchScroll: true,
-        before:function() {},
-        after:function() {},
-        afterResize:function() {},
-        afterRender:function() {}
+        before: function () { },
+        after: function () { },
+        afterResize: function () { },
+        afterRender: function () { }
       });
     });
   </script>
@@ -430,13 +434,35 @@
     });
   </script>
 
-    <!-- <script>
+<!-- /* ----- Start Burger Menu ----- */ -->
+
+  <script>
+    const toggleables = document.querySelectorAll('.toggleable')
+
+    const toggleIcon = (e) => {
+      const icon = e.composedPath().find((el) => el.classList.contains('toggleable'));
+
+      if (icon.classList.contains('toggled')) {
+        icon.classList.remove('toggled');
+      } else {
+        icon.classList.add('toggled');
+      }
+    };
+
+    toggleables.forEach((toggleable) => {
+      toggleable.addEventListener('click', toggleIcon);
+    });
+  </script>
+
+<!-- /* ----- End Burger Menu ----- */ -->
+
+  <!-- <script>
      new fullpage("#fullpage", {
        // sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
      });
    </script> -->
 
-   <!-- <script>
+  <!-- <script>
        function mouseOver() {
          $(".blockright").animate(
            {

@@ -279,3 +279,31 @@ img {
 }
 
 /* ----- End SliderHoverEffect ----- */
+
+/* ----- Start Burger Menu ----- */
+
+.burger-menu {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  /* border: solid 1px lightgray; */
+}
+
+.burger-menu .line {
+  position: absolute;
+  left: 14px;
+  width: 23px;
+  height: 10px;
+  background-color: black;
+  transition: all 0.5s;
+}
+
+.burger-menu .line-1 { top: 5px; }
+.burger-menu .line-2 { top: 20px; }
+.burger-menu .line-3 { top: 35px; }
+
+.burger-menu.toggled .line-2 { opacity: 0; }
+.burger-menu.toggled .line-1 { transform: translateY(28px) rotate(45deg); }
+.burger-menu.toggled .line-3 { transform: translateY(-28px) rotate(-45deg); }
+
+/* ----- End Burger Menu ----- */
