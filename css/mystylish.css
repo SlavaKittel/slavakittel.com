@@ -308,3 +308,74 @@ img {
 .burger-menu.toggled .line-3 { transform: translateY(-10px) rotate(-45deg); }
 
 /* ----- End Burger Menu ----- */
+
+/* ----- Start Gooey Effect ----- */
+
+.containergooey {
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ filter:url('#goo');
+}
+
+.button {
+ z-index: 99;
+ position: absolute;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 250px;
+ height: 40px;
+ background: linear-gradient(45deg, #B388EB, #8093F1);
+ border-radius: 4px;
+ color: #FFF;
+ font-size: 20px;
+ letter-spacing: 1px;
+ font-weight: 200;
+}
+
+.social {
+ opacity: 1;
+ position: relative;
+ margin: 8px;
+ width: 40px;
+ height: 40px;
+ border-radius: 100%;
+ display: inline-block;
+ color: #FFF;
+ font-size: 20px;
+ text-align: center;
+ 
+ i {
+  margin-top: 10px;
+ }
+ 
+ a {
+   color: #FFF;
+ }
+}
+
+.twitter {
+ background: #00aced;
+}
+
+.facebook {
+ background: green;
+}
+
+.google {
+ background: #dd4b39;
+}
+
+.youtube {
+ background: #bb0000;
+}
+
+.clicked {
+ opacity: 1;
+ transition: 1.2s all ease-in-out;
+ transform: translateY(56px);
+}
+
+/* ----- End Gooey Effect ----- */
