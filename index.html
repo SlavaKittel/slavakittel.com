@@ -23,7 +23,7 @@
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.css" rel="stylesheet" />
-  <link href="css/mystylish:css" rel="stylesheet" />
+  <link href="css/mystylish.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/lightslider.css" />
 </head>
 
@@ -434,13 +434,15 @@
     });
   </script>
 
-<!-- /* ----- Start Burger Menu ----- */ -->
+  <!-- /* ----- Start Burger Menu ----- */ -->
 
   <script>
     const toggleables = document.querySelectorAll('.toggleable')
 
-    const toggleIcon = (e) => {
-      const icon = e.composedPath().find((el) => el.classList.contains('toggleable'));
+    const toggleIcon = function (e) {
+      const icon = e.composedPath().find(function (el) {
+        return el.classList.contains('toggleable')
+      });
 
       if (icon.classList.contains('toggled')) {
         icon.classList.remove('toggled');
@@ -449,12 +451,27 @@
       }
     };
 
-    toggleables.forEach((toggleable) => {
-      toggleable.addEventListener('click', toggleIcon);
+    // toggleables.forEach((toggleable) => {
+    //   toggleable.addEventListener('click', toggleIcon);
+    // });
+
+    toggleables.forEach(function (toggleable) {
+      return toggleable.addEventListener('click', toggleIcon);
     });
+
   </script>
 
-<!-- /* ----- End Burger Menu ----- */ -->
+  <!-- $("#sidebar-wrapper").toggleClass("active"); -->
+
+  <!-- <a class="menu-toggle rounded" href="#">
+  <div class="burger-menu toggleable">
+    <div class="line line-1"></div>
+    <div class="line line-2"></div>
+    <div class="line line-3"></div>
+  </div>
+</a> -->
+
+  <!-- /* ----- End Burger Menu ----- */ -->
 
   <!-- <script>
      new fullpage("#fullpage", {
