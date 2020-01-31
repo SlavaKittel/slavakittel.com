@@ -20,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
     rel="stylesheet" type="text/css" />
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.css" rel="stylesheet" />
@@ -290,22 +291,23 @@
     <footer class="my-auto myme d-flex" id="contact">
       <div class="containergooey container text-center">
         <div class="button">Contact with me</div>
-        <div class="social twitter"><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
-        </div>
-        <div class="social facebook"><i class="fa fa-facebook"></i></div>
-        <div class=" social google"><i class="fa fa-google-plus"></i></div>
-        <div class="social youtube"><a href="" target="_blank"><i class="fa fa-youtube"></i></a></div>
-      </div>
-      <svg>
+        <div class="social mail"><i class="far fa-envelope"></i></div>
+        <div class="social facebook"><a href="https://www.facebook.com/radcheg?ref=bookmarks" target="_blank"><i
+              class="fa fa-facebook"></i></a></div>
+        <div class="social linkedin"><a href="https://www.linkedin.com" target="_blank"><i
+              class="fa fa-linkedin"></i></a></div>
+        <div class="social instagram"><a href="https://www.instagram.com/slavakittel" target="_blank"><i
+              class="fa fa-instagram"></i></a></div>
+      <svg style="display: none;">
         <defs>
           <filter id="goo">
             <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9"
-              result="goo" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
             <feBlend in="SourceGraphic" in2="goo" />
           </filter>
         </defs>
       </svg>
+    </div>
     </footer>
   </div>
 
@@ -424,14 +426,19 @@
 
   </script>
 
+  <!-- /* ----- Start Gooey Effect ----- */ -->
+  <script src="https://js.cx/libs/animate.js"></script>
+
   <script>
     $(".button").click(function () {
-      $(".social.twitter").toggleClass("clicked");
-      $(".social.facebook").toggleClass("clicked");
-      $(".social.google").toggleClass("clicked");
-      $(".social.youtube").toggleClass("clicked");
+      $(".social.mail").toggleClass("clicked");
+      $(".social.facebook").toggleClass("clicked1");
+      $(".social.linkedin").toggleClass("clicked2");
+      $(".social.instagram").toggleClass("clicked3");
     })
   </script>
+
+  <!-- /* ----- End Gooey Effect ----- */ -->
 
 
   <!-- $("#sidebar-wrapper").toggleClass("active"); -->
