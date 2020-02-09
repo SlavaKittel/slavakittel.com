@@ -337,12 +337,29 @@ img {
   align-items: center;
   width: 350px;
   height: 60px;
-  background: linear-gradient(45deg, rgb(91, 162, 221), rgb(32, 224, 238));
+  background-color: rgb(91, 162, 221);
+  /* background: linear-gradient(45deg, rgb(91, 162, 221), rgb(32, 224, 238)); */
   border-radius: 10px;
   color: rgb(0, 0, 0);
   font-size: 20px;
   letter-spacing: 2px;
   font-weight: 200;
+  transition: all 70ms linear;
+
+}
+
+.button:hover {
+  /* background: linear-gradient(45deg, rgb(66, 149, 218), rgb(26, 181, 192)); */
+  transition: background-color 70ms linear;
+  background-color: #0e76a8;
+
+}
+
+.button:active {
+  border-style: solid;
+  border-color: rgb(90, 195, 236);
+  border-width: 2px;
+  transform: scale(0.99);
 }
 
 .social {
