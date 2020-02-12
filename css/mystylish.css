@@ -246,12 +246,17 @@ img {
 }
 
 #containerSlider {
+  position: absolute;
   background-color: rgb(240, 17, 17);
   width: calc(0.8*100vh);
   height: calc(100vh*0.7);
   max-width: 90vw;
   max-height: 80vw;
-
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 #containerSlider:hover #leftSlide {
@@ -262,7 +267,7 @@ img {
   margin-left: -100%;
 }
 
-@media only screen and (max-width: calc()) {
+/* @media only screen and (max-width: calc()) {
   .partStrip {
     max-height: 20vw;
   }
@@ -278,7 +283,7 @@ img {
   .top3 {
     top: -60vw;
   }
-}
+} */
 
 /* ----- End SliderHoverEffect ----- */
 
