@@ -449,38 +449,15 @@ img {
   background-color: #ffffff;
 }
 
-/* .social-btns .btn:focus .fa.fa-facebook,
-.social-btns .btn:hover .fa.fa-facebook {
-  color:#3b5998;
+.social-btns .btn:focus .fa.fa-envelope,
+.social-btns .btn:hover .fa.fa-envelope {
+  color:#4fc8ec;
 }
-.social-btns .btn.facebook .fa {
+.social-btns .btn.envelope .fa {
   color: #fcfcfc;
 }
-.social-btns .btn.facebook {
-  background-color: #3b5998;
-} */
-
-
-.social-btns .btn:focus .fa.fa-facebook,
-.social-btns .btn:hover .fa.fa-facebook {
-  color:#3b5998;
-}
-.social-btns .btn.facebook .fa {
-  color: #fcfcfc;
-}
-.social-btns .btn.facebook {
-  background-color: #3b5998;
-}
-
-/* .social-btns .btn:focus .fa.fa-facebook,
-.social-btns .btn:hover .fa.fa-facebook {
-  color:#3b5998;
-}
-.social-btns .btn.facebook .fa {
-  color: #fcfcfc;
-}
-.social-btns .btn.facebook {
-  background-color: #3b5998;
+.social-btns .btn.envelope {
+  background-color: #47b6d8;
 }
 
 .social-btns .btn:focus .fa.fa-facebook,
@@ -492,7 +469,29 @@ img {
 }
 .social-btns .btn.facebook {
   background-color: #3b5998;
-} */
+}
+
+.social-btns .btn:focus .fa.fa-linkedin,
+.social-btns .btn:hover .fa.fa-linkedin {
+  color:#0e76a8;
+}
+.social-btns .btn.linkedin .fa {
+  color: #fcfcfc;
+}
+.social-btns .btn.linkedin {
+  background-color:  #0e76a8;
+}
+
+.social-btns .btn:focus .fa.fa-instagram,
+.social-btns .btn:hover .fa.fa-instagram {
+  color:#dd2a7b !important;
+}
+.social-btns .btn.instagram.fa {
+  background-color: #fcfcfc;
+}
+.social-btns .btn.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); 
+}
 
 
 .social-btns .btn:focus:before,
@@ -541,8 +540,13 @@ img {
           transform: rotate(45deg);
 }
 .social-btns .btn .fa {
-  font-size: 38px;
+  font-size: 37px;
   vertical-align: middle;
+}
+.social-btns .btn .fa.fa.fa-instagram {
+  font-size: 55px;
+  margin: -5px;
+  color: rgb(255, 255, 255);
 }
 
 
