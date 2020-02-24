@@ -5,7 +5,6 @@
   $(".menu-toggle").click(function(e) {
     e.preventDefault();
     $("#sidebar-wrapper").toggleClass("active");
-    $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
     $(this).toggleClass("active");
   });
 
@@ -17,7 +16,7 @@
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000, "easeInOutExpo");
+        }, 1100, "easeInOutExpo");
         return false;
       }
     }
@@ -27,8 +26,23 @@
   $('#sidebar-wrapper .js-scroll-trigger').click(function() {
     $("#sidebar-wrapper").removeClass("active");
     $(".menu-toggle").removeClass("active");
-    $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
   });
+
+  // $('.pisja').click(function() {
+  //   $("#sidebar-wrapper").removeClass("active");
+  //   $(".menu-toggle").removeClass("active");
+  // });
+
+  // $('.sisja').click(function() {
+  //   $("#sidebar-wrapper").removeClass("active");
+  //   $(".menu-toggle").removeClass("active");
+  // });
+
+  $('.myDiv').click(function(e) {
+    e.stopPropagation();
+    return false;  
+  });
+
 
   // Scroll to top button appear
   $(document).scroll(function() {

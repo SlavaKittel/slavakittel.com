@@ -45,7 +45,7 @@
 
   <body id="page-top">
     <!-- Navigation -->
-
+<div class="myDiv">
     <a class="menu-toggle rounded" href="#">
       <div class="burger-menu toggleable">
         <div class="line line-1"></div>
@@ -53,7 +53,7 @@
         <div class="line line-3"></div>
       </div>
     </a>
-    <nav id="sidebar-wrapper">
+    <nav id="sidebar-wrapper" >
       <ul class="sidebar-nav">
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#page-top">Home</a>
@@ -82,10 +82,10 @@
         </li>
       </ul>
     </nav>
-
+  </div>
     <!-- Home -->
 
-    <div class="example-classname">
+    <div class="example-classname" class="sisja">
       <header id="home">
         <div id="containerSlider">
           <div class="partStrip" style="margin: auto;">
@@ -397,7 +397,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.min.js"></script>
+    <script src="js/stylish-portfolio.js"></script>
 
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
     <script src="js/jquery-1.9.1.min.js"></script>
@@ -426,12 +426,12 @@
           standardScrollElements: "",
           setHeights: true,
           overflowScroll: true,
-          updateHash: false,
+          updateHash: true,
           touchScroll: true,
           before: function() {},
           after: function() {},
           afterResize: function() {},
-          afterRender: function() {}
+          afterRender: function() {},
         });
       });
     </script>

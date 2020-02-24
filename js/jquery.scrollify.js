@@ -78,7 +78,7 @@ if touchScroll is false - update index
       sectionName: "section-name",
       interstitialSection: "",
       easing: "easeOutExpo",
-      scrollSpeed: 800,
+      scrollSpeed: 1100,
       offset: 0,
       scrollbars: true,
       target: "html,body",
