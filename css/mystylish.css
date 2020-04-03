@@ -598,7 +598,7 @@ img {
 .containerCard {
   position: relative;
   height: 350px;
-  width: 600px;
+  width: 400px;
   top: 60px;
   left: calc(60% - 300px);
   display: flex;
@@ -618,7 +618,7 @@ img {
   display: flex;
   height: 280px;
   width: 200px;
-  background-color: #527c81;
+  background-color: #1D809F;
   border-radius: 10px;
   box-shadow: -1px 0px 20px 0px #25383a;
 /*   margin-left: -50px; */
