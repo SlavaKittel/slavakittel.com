@@ -10,7 +10,7 @@ var logoAnimation = (function() {
       ".logo-animation path:not(.icon-curve)"
     );
     var innerWidth = window.innerWidth;
-    var maxWidth = 740;
+    var maxWidth = 40;
     var logoScale = innerWidth <= maxWidth ? innerWidth / maxWidth : 1;
     var logoTimeline = anime.timeline({
       autoplay: false,
@@ -177,6 +177,7 @@ var logoAnimation = (function() {
   for (i = 0; i <= dataReload.length; i++) {
     dataReload[i].onclick = function () {
       location.reload(true);
+      console.trace()
     };
   }
   // End multi-language

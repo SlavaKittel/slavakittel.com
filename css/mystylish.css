@@ -77,6 +77,19 @@ ul {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .responsiveCardsMinWidth {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .responsiveCardsMaxWidth {
+    display: none;
+  }
+}
+
+
 /* ///// inputs /////*/
 
 /* body {
@@ -678,6 +691,31 @@ img {
 
 .card:hover .filledbar {
   width: 100%;
+}
+
+      /* Cards Slider Mode */
+
+.cardSlider {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #1D809F;
+  border-radius: 10px;
+  box-shadow: -1px 0px 20px 0px #25383a;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.cardSlider:hover .filledbar {
+  width: 100%;
+}
+
+.cardSlider:hover .hide {
+  opacity: 1;
 }
 
 /* ----- End Cards ----- */

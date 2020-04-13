@@ -33,9 +33,9 @@
   <!-- Logo Screen Saver-->
   <div id="loader-wrapper">
     <div id="loader"></div>
-    <div class="loader-section section">
-      <div class="logo-animation" style="margin-top: -250px;">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    <div class="loader-section section w-100">
+      <div class="logo-animation container row h-100 w-100 row d-flex justify-content-center">
+      <svg class="my-auto w-100 row d-flex justify-content-center" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         x="0px" y="0px" viewBox="0 0 800 600" style="enable-background:new 0 0 800 600;" xml:space="preserve">
         <style type="text/css">
           .st0 {
@@ -128,38 +128,38 @@
         <div class="line line-3"></div>
       </div>
     </a>
-    <nav id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger main">Home</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger about">About</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger skills">Skills</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger services">Services</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger portfolio">Portfolio</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger contact">Contact</a>
-        </li>
-        <li class="p-3">
-          <a class="datareload">
-            <button type="button" class="btn btn-info">EN</button>
-          </a>
-        </li>
-        <li class="p-3">
-          <a class="datareload" >
-            <button type="button" class="btn btn-info">RU</button>
-          </a>
-        </li>
-      </ul>
-    </nav>
+      <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger main" onclick="onSidebarItemClick()">Home</a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger about">About</a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger skills">Skills</a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger services">Services</a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger portfolio">Portfolio</a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger contact">Contact</a>
+          </li>
+          <li class="p-3">
+            <a class="datareload">
+              <button type="button" class="btn btn-info">EN</button>
+            </a>
+          </li>
+          <li class="p-3">
+            <a class="datareload" >
+              <button type="button" class="btn btn-info">RU</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
   </div>
 
   <!-- Home -->
@@ -201,7 +201,7 @@
         <div class="col-lg-12">
           <h2 id="lang">Hi, I’m Slava. Nice to meet you.</h2>
            <a href="#rus" data-reload>Russian</a> <!-- DELETE -->
-           <a href="#eng" data-reload>English</a> <!-- DELETE -->
+           <a href="#eng" data-reload>English</a> <!-- DELETE --> 
           <p class="lead mb-5">
             После 10 летнего опыта инженером в строительной сфере я не так давно ворвался в индустрию разроботки фронтенда и дизайна, 
             я понял что это моя стихия и мое любимое дело на много лет вперед. </br>
@@ -221,65 +221,98 @@
       <div class="container text-center my-auto">
         <div class="col-lg-12">
           <h2>My skills</h2>
-          <div class="containerCard">
-            <div class="card">
-              <h3 class="title">Javascritp</h3>
-              <div class="bar">
-                <div class="emptybar"></div>
-                <div class="filledbar"></div>
-                <h5 class="hide">Использование ванильного JS, исползование чистого кода.
-                </h5>
+            <!-- Cards Mouse Mode -->
+            <div class="responsiveCardsMaxWidth">
+              <div class="containerCard responsiveCardsMaxWidth">
+                <div class="card">
+                  <h3 class="title">Javascritp</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                    <h5 class="hide">Использование ванильного JS, 
+                    использование чистого кода.
+                    </h5>
+                  </div>
+                </div>
+                <div class="card">
+                  <h3 class="title">Фреймворки,</b> Библиотеки </h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                    <h5 class="hide">
+                      <ul style="margin-left: 2em;">
+                        <li type="circle">Bootstrap</li>
+                        <li type="circle">jQuery</li>
+                        <li type="circle">AnimeJS</li>
+                        <li type="circle">Soon</li>
+                      </ul>
+                    </h5>
+                  </div>
+                </div>
+                <div class="card">
+                  <h3 class="title">HTML/СSS</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                    <h5 class="hide">
+                    </h5>
+                  </div>
+                </div>
+                <div class="card">
+                  <h3 class="title">Illustrator</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                    <h5 class="hide">TRsdf sdf sdfsdfsd sdfsd dsf sdf sd fsdfdfsdf
+                    </h5>
+                  </div>
+                </div>
+                <div class="card">
+                  <h3 class="title">UX, UI</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                    <h5 class="hide">TRsdf sdf sdfsdfsd sdfsd dsf sdf sd fsdfdfsdf
+                    </h5>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <h3 class="title">Фреймворки,</b> Библиотеки </h3>
-              <div class="bar">
-                <div class="emptybar"></div>
-                <div class="filledbar"></div>
-                <h5 class="hide">
-                  <ul style="margin-left: 2em;">
-                    <li type="circle">Bootstrap</li>
-                    <li type="circle">jQuery</li>
-                    <li type="circle">AnimeJS</li>
-                    <li type="circle">Soon</li>
-                  </ul>
-                </h5>
-              </div>
+            <!-- Card Slider -->
+            <div class="responsiveCardsMinWidth">
+              <ul id="content-slider">
+                <li>
+                  <div class="cardSlider">
+                    <h3 class="title">UX, UI</h3>
+                    <div class="bar">
+                      <div class="emptybar"></div>
+                      <div class="filledbar"></div>
+                      <h5 class="hide">TRsdf sdf sdfsdfsd sdfsd dsf sdf sd fsdfdfsdf
+                      </h5>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="cardSlider">
+                    <h3 class="title">UX, UI</h3>
+                    <div class="bar">
+                      <div class="emptybar"></div>
+                      <div class="filledbar"></div>
+                      <h5 class="hide">TRsdf sdf sdfsdfsd sdfsd dsf sdf sd fsdfdfsdf
+                      </h5>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="card">
-              <h3 class="title">HTML/СSS</h3>
-              <div class="bar">
-                <div class="emptybar"></div>
-                <div class="filledbar"></div>
-                <h5 class="hide">
-                </h5>
-              </div>
-            </div>
-            <div class="card">
-              <h3 class="title">Illustrator</h3>
-              <div class="bar">
-                <div class="emptybar"></div>
-                <div class="filledbar"></div>
-                <h5 class="hide">TRsdf sdf sdfsdfsd sdfsd dsf sdf sd fsdfdfsdf
-                </h5>
-              </div>
-            </div>
-            <div class="card">
-              <h3 class="title">UX, UI</h3>
-              <div class="bar">
-                <div class="emptybar"></div>
-                <div class="filledbar"></div>
-                <h5 class="hide">TRsdf sdf sdfsdfsd sdfsd dsf sdf sd fsdfdfsdf
-                </h5>
-              </div>
-            </div>
-            
-          </div>
+
         </div>
-        <a class="btn btn-dark btn-xl js-scroll-trigger mt-5 services">What I Offer</a>
+          <a class="btn btn-dark btn-xl js-scroll-trigger mt-5 services">What I Offer</a>
       </div>
     </div>
   </div>
+
+
 
   <!-- End Skill -->
 
@@ -337,7 +370,7 @@
         </div>
 
         <div class="responsive-columntoslider-min">
-          <ul id="content-slider">
+          <ul id="content-slider1">
             <li>
               <div>
                 <span class="service-icon rounded-circle mx-auto mb-3">
@@ -408,7 +441,7 @@
         </div>
 
         <div class="item input-container">
-          <ul id="content-slider1">
+          <ul id="content-slider2">
             <li>
               <div class="item">
                 <a class="portfolio-item" href="https://www.rafamily.ee/test">
@@ -610,10 +643,21 @@
     });
   </script>
 
+<script>
+  $(document).ready(function () {
+    $("#content-slider2").lightSlider({
+      loop: false,
+      keyPress: true
+    });
+  });
+</script>
+
 
 
   <!-- /* ----- Start Burger Menu ----- */ -->
-  <script>
+  <script src="../js/appscript.js"></script> 
+  <!-- Code in extern file js for best debugging -->
+  <!-- <script>
     const toggleables = document.querySelectorAll(".toggleable");
     // Ко всем html строкам с классам '.toggleable' буду присвоены
     // дальнейшие действия
@@ -632,9 +676,8 @@
 
     toggleables.forEach(function (toggleable) {
       return toggleable.addEventListener("click", toggleIcon);
-      // return $("#sidebar-wrapper").removeClass("active");
     });
-  </script>
+  </script> -->
   <!-- /* ----- End Burger Menu ----- */ -->
 
   <!-- /* ----- Start Gooey Effect ----- */ -->
@@ -702,7 +745,7 @@
         draw: function (progress) {
           falldownthree.style.top = progress * 120 + "px";
         }
-      });
+      }); 
       animate({
         duration: 1600,
         timing: bounceEaseOut,
