@@ -47,7 +47,7 @@ var logoAnimation = (function() {
         },
         0
       )
-      .add(
+      .add(  // DELETE
         {
           targets: ".fill.in",
           strokeDashoffset: {
@@ -68,7 +68,7 @@ var logoAnimation = (function() {
         },
         0
       )
-      .add(
+      .add( // DELETE
         {
           targets: ".fill.in.speed",
           strokeDashoffset: {
@@ -89,7 +89,7 @@ var logoAnimation = (function() {
         },
         0
       )
-      .add(
+      .add( // DELETE
         {
           targets: ".fill.in.slow",
           strokeDashoffset: {
@@ -101,7 +101,7 @@ var logoAnimation = (function() {
         },
         0
       )
-      .add(
+      .add( // DELETE
         {
           targets: ".fill.out",
           strokeDashoffset: [
@@ -121,7 +121,7 @@ var logoAnimation = (function() {
         },
         0
       )
-      .add(
+      .add( // DELETE
         {
           targets: ".fill.out.slow",
           strokeDashoffset: [
@@ -139,7 +139,7 @@ var logoAnimation = (function() {
         },
         0
       )
-      .add( 
+      .add( // DELETE
         {
           targets: ".line.out",
           strokeDashoffset: {
