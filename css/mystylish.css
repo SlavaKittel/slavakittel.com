@@ -708,6 +708,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  border-left-style: 300px;
+  padding: 50px;
 }
 
 .cardSlider:hover .filledbar {

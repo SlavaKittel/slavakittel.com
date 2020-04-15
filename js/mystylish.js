@@ -10,7 +10,7 @@ var logoAnimation = (function() {
       ".logo-animation path:not(.icon-curve)"
     );
     var innerWidth = window.innerWidth;
-    var maxWidth = 40;
+    var maxWidth = 740;
     var logoScale = innerWidth <= maxWidth ? innerWidth / maxWidth : 1;
     var logoTimeline = anime.timeline({
       autoplay: false,
@@ -26,6 +26,27 @@ var logoAnimation = (function() {
     }
 
     logoTimeline
+      .add(
+        {
+          targets: ".fill.on",
+          strokeDashoffset: {
+            value: [anime.setDashoffset, 0],
+            duration: 5000,
+            delay: function(el, i, t) {
+              return 100;
+            },
+            easing: "linear"
+          },
+          opacity: {
+            value: 0,
+            duration: 1,
+            delay: function(el, i, t) {
+              return 5000;
+            }
+          }
+        },
+        0
+      )
       .add(
         {
           targets: ".fill.in",
