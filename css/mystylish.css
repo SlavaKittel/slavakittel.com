@@ -224,29 +224,38 @@ input[type="checkbox"]:checked + label {
 
 /* ----- Start SliderHoverEffect ----- */
 
-.relative {
-  position: relative;
-}
-
 .partStrip {
+  position: static;
   max-width: 90vw;
-  height: calc(100vh*0.7/4);
-  /* width: calc(0.8*100vh); */
+  height: 16.66667%;
   border: 0 solid rgb(2, 2, 2);
   overflow: hidden;
 }
 
 .top1 {
-  top: calc(-100vh*0.7/4);
+  top: -100%;
+  position: relative;
   
 }
 
 .top2 {
-  top: calc(-100vh*0.7/2);
+  top: -200%;
+  position: relative;
 }
 
 .top3 {
-  top: calc(-100vh*0.7/1.33333);
+  top: -300%;
+  position: relative;
+}
+
+.top4 {
+  top: -400%;
+  position: relative;
+}
+
+.top5 {
+  top: -500%;
+  position: relative;
 }
 
 img {
@@ -256,20 +265,27 @@ img {
 
 #containerSlider {
   position: absolute;
-  width: calc(0.8*100vh);
-  height: calc(100vh*0.7);
+  width: 80vh;
+  height: 70vh;
   max-width: 90vw;
-  max-height: 80vw;
+  max-height: 78.7vw;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  box-shadow: 0 10px 6px -6px rgb(27, 98, 179);
+  border-style: solid;
+  border-color: rgb(209, 208, 208);
+  border-width: 1.2px;
+  
+
+  /* border-radius: 50%; */
+  /* box-shadow: 10px 10px 6px -6px rgb(27, 98, 179); */
+  box-shadow: 0px 0px 300px -100px rgb(224, 224, 224);
   /* box-shadow: 20px 20px 50px 15px rgb(40, 97, 172); */
 }
 #containerSlider:hover {
-  box-shadow: 0 10px 6px -6px rgb(0, 0, 0);
+  /* box-shadow: 0 10px 6px -6px rgb(0, 0, 0); */
 }
 #containerSlider:hover #leftSlide {
   margin-left: 100%;
