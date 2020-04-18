@@ -175,38 +175,3 @@ var logoAnimation = (function() {
   window.onload = function() {
     logoAnimation.init();
   };
-
-// Start multi-language
-  var dataReload = document.querySelectorAll("[data-reload]")
-
-  var language = {
-    eng: {
-      text: "Hi, I’m Slava. Nice to meet you."
-    },
-    rus: {
-      text: "Привет, меня зовут Слава. Будем знакомы."
-    }
-  };
-
-  if (window.location.hash) {
-    if (window.location.hash === "#rus") {
-      lang.textContent = language.rus.text;
-    }
-  }
-  
-  var i;
-  for (i = 0; i <= dataReload.length; i++) {
-    dataReload[i].onclick = function () {
-      location.reload(true);
-      console.trace()
-    };
-  }
-  // End multi-language
-
-  //  function myFunction() {
-  //   var x, i;
-  //   x = document.querySelectorAll("#lang");
-  //   for (i = 0; i < x.length; i++) {
-  //     x[i].style.backgroundColor = "red";
-  //   }
-  // }

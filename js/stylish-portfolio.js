@@ -28,16 +28,6 @@
     $(".menu-toggle").removeClass("active");
   });
 
-  // $('.pisja').click(function() {
-  //   $("#sidebar-wrapper").removeClass("active");
-  //   $(".menu-toggle").removeClass("active");
-  // });
-
-  // $('.sisja').click(function() {
-  //   $("#sidebar-wrapper").removeClass("active");
-  //   $(".menu-toggle").removeClass("active");
-  // });
-
   $('.myDiv').click(function(e) {
     e.stopPropagation();
     return false;  

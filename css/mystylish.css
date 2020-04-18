@@ -226,7 +226,6 @@ input[type="checkbox"]:checked + label {
 
 .partStrip {
   position: static;
-  max-width: 90vw;
   height: 16.66667%;
   border: 0 solid rgb(2, 2, 2);
   overflow: hidden;
@@ -277,16 +276,20 @@ img {
   border-style: solid;
   border-color: rgb(209, 208, 208);
   border-width: 1.2px;
-  
+  overflow: hidden;
+  border-radius: 20%;
+  cursor: default;
+
 
   /* border-radius: 50%; */
   /* box-shadow: 10px 10px 6px -6px rgb(27, 98, 179); */
   box-shadow: 0px 0px 300px -100px rgb(224, 224, 224);
   /* box-shadow: 20px 20px 50px 15px rgb(40, 97, 172); */
 }
-#containerSlider:hover {
-  /* box-shadow: 0 10px 6px -6px rgb(0, 0, 0); */
-}
+/* #containerSlider:hover {
+  box-shadow: 0 10px 6px -6px rgb(0, 0, 0);
+} */
+
 #containerSlider:hover #leftSlide {
   margin-left: 100%;
 }

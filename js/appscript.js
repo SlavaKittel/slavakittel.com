@@ -3,14 +3,15 @@ const toggleables = document.querySelectorAll(".toggleable");
 // дальнейшие действия
 
 const toggleFinder = (el) => {
-    //console.log(el);
+    // console.log(el);
     return el.classList ? el.classList.contains("toggleable") : false;
 };
 
-const toggleFinder2 = function (el) {
-    //console.log(this);
-    return el.classList.contains("toggleable");
-};
+// Second variant:
+// const toggleFinder2 = function (el) {
+//     //console.log(this);
+//     return el.classList.contains("toggleable");
+// };
 
 const toggleIcon = function (e) {
 //   const icon = e.composedPath().find(function (el) {
@@ -32,6 +33,4 @@ toggleables.forEach(function (toggleable) {
 
 function onSidebarItemClick(e) {
     $('.toggleable').removeClass("toggled");
-    // var x = document.getElementsByClassName("toggleable");
-    // x.classList.remove("toggled");
 }
