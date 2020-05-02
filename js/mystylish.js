@@ -41,7 +41,7 @@ var logoAnimation = (function() {
             value: 0,
             duration: 1,
             delay: function(el, i, t) {
-              return 5000;
+              return 10000;
             }
           }
         },

@@ -32,11 +32,15 @@
 
   <!-- Logo Screen Saver-->
   <div id="loader-wrapper">
-    <div id="loader"></div>
-    <div class="loader-section section w-100">
-      <div class="logo-animation container row h-100 w-100 row d-flex justify-content-center">
-      <svg class="my-auto w-100 row d-flex justify-content-center" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        x="0px" y="0px" viewBox="0 0 595.3 841.9" style="enable-background:new 0 0 595.3 841.9;" xml:space="preserve">
+    <div class="loader-section">
+      <div class="logo-animation">
+
+
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" viewBox="0 0 595.3 841.9" style="width: 75.5%; height: auto; 
+        margin-left: auto; margin-right: auto; display: block;
+
+        " xml:space="preserve">
         <style type="text/css">
           .st0 {
             fill: none;
@@ -575,7 +579,8 @@
         <div class="button" id="contactbutton">Get in touch</div>
         <div class="social-btns" id="falldownone">
           <a class="btn envelope">
-            <i class="fa fa-envelope"></i></a>
+            <i class="fa fa-envelope" id="contactmail"></i></a>
+            <span class="popUpMail" id="falldownfive">Click to copy my email to clipboard</span>
         </div>
         <div class="social-btns" id="falldowntwo">
           <a class="btn facebook" href="https://www.facebook.com/radcheg?ref=bookmarks">
@@ -588,7 +593,7 @@
         <div class="social-btns" id="falldownfour">
           <a class="btn instagram" href="https://www.instagram.com/slavakittel">
             <i class="fa fa-instagram"></i></a>
-        </div>\
+        </div>
         <svg style="display: none;">
           <defs>
             <filter id="goo">
@@ -661,7 +666,7 @@
 
       setTimeout(function () {
         $('body').addClass('loaded');
-      }, 000);
+      }, 0); //4200
 
     });
   </script>
@@ -803,6 +808,7 @@
         timing: bounceEaseOut,
         draw: function (progress) {
           falldownone.style.top = progress * 120 + "px";
+
         }
       });
       animate({
@@ -826,6 +832,46 @@
           falldownfour.style.top = progress * 120 + "px";
         }
       });
+    };
+
+    contactmail.onmouseenter = function () {
+      falldownfive.style.marginTop = 0 + 'px'; // if you want don't save value 80px on next steps
+      animate({
+        duration: 1500,
+        timing: bounceEaseOut,
+        draw: function (progress) {
+          falldownfive.style.top = progress * 80 + "px";
+        }
+      });
+      falldownfive.style.opacity = 1;
+      console.log('loh');
+    };
+
+    contactmail.onmouseleave = function () {
+      falldownfive.style.marginTop = 80 + 'px'; 
+      animate({
+        duration: 1500,
+        timing: bounceEaseOut,
+        draw: function (progress) {
+          falldownfive.style.top = progress * -80 + "px";
+        }
+      });
+      falldownfive.style.opacity = 0;
+      console.log('hi');
+    };
+
+    contactmail.onclick = function () {
+      document.getElementById("falldownfive").innerHTML = 
+      "Yeah! You are save email to clipboard"
+      falldownfive.style.backgroundColor = "rgb(56, 185, 185)"
+    };
+
+    contactmail.onmousedown = function () {
+      falldownfive.style.transform = "scale(0.95)";
+    };
+
+    contactmail.onmouseup = function () {
+      falldownfive.style.transform = "scale(1)";
     };
   </script>
   <!-- /* ----- End Gooey Effect ----- */ -->
