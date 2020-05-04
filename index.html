@@ -321,6 +321,7 @@
             <!-- Cards Mouse Mode -->
             <div class="responsiveCardsMaxWidth">
               <div class="containerCard responsiveCardsMaxWidth">
+
                 <div class="card">
                   <h3 class="title">Javascritp</h3>
                   <div class="bar">
@@ -331,6 +332,7 @@
                     </h5>
                   </div>
                 </div>
+
                 <div class="card">
                   <h3 class="title">Фреймворки,</b> Библиотеки </h3>
                   <div class="bar">
@@ -346,6 +348,7 @@
                     </h5>
                   </div>
                 </div>
+
                 <div class="card">
                   <h3 class="title">HTML/СSS</h3>
                   <div class="bar">
@@ -355,24 +358,29 @@
                     </h5>
                   </div>
                 </div>
-                <div class="card">
+
+                <div class="card" id="loadPercent1">
                   <h3 class="title">Illustrator</h3>
                   <div class="bar">
+                    <h6 id="stringPercent1" class="stylePercent">40%</h6>
                     <div class="emptybar"></div>
-                    <div class="filledbar"></div>
+                    <div class="filledbar40"></div>
                     <h5 class="hide">TRsdf sdf sdfsdfsd sdfsd dsf sdf sd fsdfdfsdf
                     </h5>
                   </div>
                 </div>
-                <div class="card">
+
+                <div class="card" id="loadPercent">
                   <h3 class="title">UX, UI</h3>
                   <div class="bar">
+                    <h6 id="stringPercent" class="stylePercent">80%</h6>
                     <div class="emptybar"></div>
-                    <div class="filledbar"></div>
+                    <div class="filledbar80"></div>
                     <h5 class="hide">TRsdf sdf sdfsdfsd sdfsd dsf sdf sd fsdfdfsdf
                     </h5>
                   </div>
                 </div>
+
               </div>
             </div>
             <!-- Card Slider -->
@@ -836,15 +844,16 @@
 
     contactmail.onmouseenter = function () {
       falldownfive.style.marginTop = 0 + 'px'; // if you want don't save value 80px on next steps
-      animate({
+       animate({
+        delay: 9000,
         duration: 1500,
         timing: bounceEaseOut,
         draw: function (progress) {
           falldownfive.style.top = progress * 80 + "px";
-        }
+        },
       });
       falldownfive.style.opacity = 1;
-      console.log('loh');
+      console.log('HI');
     };
 
     contactmail.onmouseleave = function () {
@@ -857,12 +866,11 @@
         }
       });
       falldownfive.style.opacity = 0;
-      console.log('hi');
     };
 
     contactmail.onclick = function () {
       document.getElementById("falldownfive").innerHTML = 
-      "Yeah! You are save email to clipboard"
+      "Yeah! You saved email to clipboard"
       falldownfive.style.backgroundColor = "rgb(56, 185, 185)"
     };
 
@@ -874,7 +882,67 @@
       falldownfive.style.transform = "scale(1)";
     };
   </script>
-  <!-- /* ----- End Gooey Effect ----- */ -->
+<!-- /* ----- End Gooey Effect ----- */ -->
+
+<!-- /* ----- Stard Cards ----- */ -->
+
+  <script>
+    loadPercent.onmouseenter = function () {
+      const roundLogEl = document.querySelector('#stringPercent');
+  	anime({
+      targets: roundLogEl,
+      duration: 600,
+      innerHTML: [0, 80],
+      easing: 'linear',
+      round: 1 // Will round the animated value to 1 decimal
+  	});
+      stringPercent.style.opacity = 1;
+      stringPercent.style.paddingLeft = 100 + 'px';
+    };
+
+    loadPercent.onmouseleave = function () {
+      stringPercent.style.paddingLeft = 0 + 'px';
+      const roundLogEl = document.querySelector('#stringPercent');
+  	anime({
+      targets: roundLogEl,
+      duration: 600,
+      innerHTML: [80, 0],
+      easing: 'linear',
+      round: 1 // Will round the animated value to 1 decimal
+    });
+      stringPercent.style.opacity = 0;
+      stringPercent.style.paddingLeft = -100 + 'px';
+    };
+
+    loadPercent1.onmouseenter = function () {
+      const roundLogEl = document.querySelector('#stringPercent1');
+  	anime({
+      targets: roundLogEl,
+      duration: 600,
+      innerHTML: [0, 40],
+      easing: 'linear',
+      round: 1 // Will round the animated value to 1 decimal
+  	});
+      stringPercent1.style.opacity = 1;
+      stringPercent1.style.paddingLeft = 50 + 'px';
+    };
+
+    loadPercent1.onmouseleave = function () {
+      stringPercent1.style.paddingLeft = 0 + 'px';
+      const roundLogEl = document.querySelector('#stringPercent1');
+  	anime({
+      targets: roundLogEl,
+      duration: 600,
+      innerHTML: [40, 0],
+      easing: 'linear',
+      round: 1 // Will round the animated value to 1 decimal
+    });
+      stringPercent1.style.opacity = 0;
+      stringPercent1.style.paddingLeft = -50 + 'px';
+    };
+
+  
+  </script>
 
 </body>
 

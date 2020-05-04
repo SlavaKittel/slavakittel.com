@@ -385,6 +385,7 @@ img {
   letter-spacing: 2px;
   font-weight: 200;
   transition: all 70ms linear;
+  user-select: none;
 
 }
 
@@ -731,7 +732,7 @@ img {
 
 .bar {
   position: absolute;
-  top: 100px;
+  top: 60px;
   left: 20px;
   height: 5px;
   width: 150px;
@@ -743,9 +744,9 @@ img {
   height: 100%;
 }
 
-.filledbar {
+.filledbar80 {
   position: absolute;
-  top: 0px;
+  top: 27.2px;
   z-index: 3;
   width: 0px;
   height: 100%;
@@ -754,8 +755,27 @@ img {
   transition: 0.6s ease-out;
 }
 
-.card:hover .filledbar {
-  width: 100%;
+.filledbar40 {
+  position: absolute;
+  top: 27.2px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar80 {
+  width: 80%;
+}
+.card:hover .filledbar40 {
+  width: 40%;
+}
+
+.stylePercent {
+  transition: all 0.6s ease-out;
+  opacity: 0;
 }
 
       /* Cards Slider Mode */
@@ -780,6 +800,7 @@ img {
 .cardSlider:hover .filledbar {
   width: 100%;
 }
+
 
 .cardSlider:hover .hide {
   opacity: 1;
