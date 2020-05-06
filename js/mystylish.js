@@ -18,7 +18,7 @@ var logoAnimation = (function() {
       loop: false
     });
 
-    logoEl.style.transform = "translateY(50px) scale(" + logoScale + ")";
+    // logoEl.style.transform = "translateY(50px) scale(" + logoScale + ")";
 
     for (var i = 0; i < pathEls.length; i++) {
       var el = pathEls[i];

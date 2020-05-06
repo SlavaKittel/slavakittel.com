@@ -33,14 +33,19 @@
   <!-- Logo Screen Saver-->
   <div id="loader-wrapper">
     <div class="loader-section">
-      <div class="logo-animation">
-
-
+      <div class="logo-animation"> 
+      <div id="containerSlider2">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        x="0px" y="0px" viewBox="0 0 595.3 841.9" style="width: 75.5%; height: auto; 
-        margin-left: auto; margin-right: auto; display: block;
+        x="0px" y="0px" viewBox="0 0 595.3 841.9" style="
+        position: static;
+        width: 100%; 
+        height: auto; 
 
-        " xml:space="preserve">
+        margin-left: auto; 
+        margin-right: auto; 
+        display: block;" 
+        xml:space="preserve">
+
         <style type="text/css">
           .st0 {
             fill: none;
@@ -206,6 +211,7 @@
       <path class="st1 fill on" d="M409.1,414.7L409.1,414.7z"/>
       
       </svg>
+    </div>
     </div>
     </div>
   </div>
@@ -674,7 +680,7 @@
 
       setTimeout(function () {
         $('body').addClass('loaded');
-      }, 0); //4200
+      }, 4200); //4200
 
     });
   </script>
@@ -894,9 +900,11 @@
 		  var href = $(this).attr('href');
 		  var email = href.replace('mailto:', '');
       copyToClipboard(email);
-      console.log('copy');
+      console.log('copy email');
     });
 
+    // Grabbed this from Stack Overflow.
+    // Copies the email variable to clipboard
     function copyToClipboard(text) {
       var dummy = document.createElement("input");
       document.body.appendChild(dummy);
@@ -904,7 +912,6 @@
       dummy.select();
       document.execCommand('copy');
       document.body.removeChild(dummy);
-
     }
 
   </script>
