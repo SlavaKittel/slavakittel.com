@@ -32,8 +32,8 @@
 
   <!-- Logo Screen Saver-->
   <div id="loader-wrapper">
-    <div class="loader-section">
-      <div class="logo-animation">
+    <!-- <div class="loader-section">
+      <div class="logo-animation"> -->
         <div id="containerSlider2">
           <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         x="0px" y="0px" viewBox="0 0 585.3 841.9" xml:space="preserve">
@@ -389,7 +389,9 @@
         <div class="col-lg-12">
           <h2 class="lang" key="about1">Hi, I’m Slava. Nice to meet you!</h2>
           <p class="lead mb-5 lang" key="about2">
-            GHH hskdjf hsdfh ksjd fhkjsdh fkjsdh fksjdf skjd f
+            After 10 years of experience as an engineer in the construction industry, 
+            I recently entered into the Frontend Development and Design industry, 
+            I realized that this is my element for years to come. With strong motivation, everyone can be the best!
           </p>
         </div>
       </div>
@@ -404,44 +406,40 @@
     <div class="myme d-flex" id="skills">
       <div class="container text-center my-auto">
         <div class="col-lg-12">
-          <h2>My skills</h2>
+          <h2 class="lang" key="skills1">My skills</h2>
           <!-- Cards Mouse Mode -->
           <div class="responsiveCardsMaxWidth">
             <div class="containerCard responsiveCardsMaxWidth">
 
-              <div class="card">
-                <h3 class="title">Javascritp</h3>
+              <div class="card" id="cloneTest">
+                <h3 class="title lang" key="skills3">UX UI Design</h3>
                 <div class="bar">
+                  <h6 id="stringPercent4" class="stylePercent">40%</h6>
                   <div class="emptybar"></div>
-                  <div class="filledbar"></div>
-                  <h5 class="hide">Использование ванильного JS,
-                    использование чистого кода.
+                  <div class="filledbar50"></div>
+                  <h5 class="hide lang" key="skills4">High understanding of the interacting user with the product!
                   </h5>
                 </div>
               </div>
 
-              <div class="card">
-                <h3 class="title">Фреймворки,</b> Библиотеки </h3>
+              <div class="card" id="loadPercent1">
+                <h3 class="title">HTML/CSS</h3>
                 <div class="bar">
+                  <h6 id="stringPercent3" class="stylePercent">95%</h6>
                   <div class="emptybar"></div>
-                  <div class="filledbar"></div>
-                  <h5 class="hide">
-                    <ul style="margin-left: 2em;">
-                      <li type="circle">Bootstrap</li>
-                      <li type="circle">jQuery</li>
-                      <li type="circle">AnimeJS</li>
-                      <li type="circle">Soon</li>
-                    </ul>
+                  <div class="filledbar95"></div>
+                  <h5 class="hide">Like a fish in water.Как рыба в воде.
                   </h5>
                 </div>
               </div>
 
-              <div class="card">
-                <h3 class="title">HTML/СSS</h3>
+              <div class="card" id="loadPercent1">
+                <h3 class="title">Sport</h3>
                 <div class="bar">
+                  <h6 id="stringPercent2" class="stylePercent">40%</h6>
                   <div class="emptybar"></div>
-                  <div class="filledbar"></div>
-                  <h5 class="hide">
+                  <div class="filledbar50"></div>
+                  <h5 class="hide">Диск гольф, Снукер, Волейбол, MTB велосипед - осторожно я заразен! 
                   </h5>
                 </div>
               </div>
@@ -449,21 +447,39 @@
               <div class="card" id="loadPercent1">
                 <h3 class="title">Illustrator</h3>
                 <div class="bar">
+                  <h6 id="stringPercent2" class="stylePercent">40%</h6>
+                  <div class="emptybar"></div>
+                  <div class="filledbar50"></div>
+                  <h5 class="hide">Необходимые знания для решения не сложных иллюстраций
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card" id="loadPercent1">
+                <h3 class="title">Javascritp</h3>
+                <div class="bar">
                   <h6 id="stringPercent1" class="stylePercent">40%</h6>
                   <div class="emptybar"></div>
                   <div class="filledbar40"></div>
-                  <h5 class="hide">TRsdf sdf sdfsdfsd sdfsd dsf sdf sd fsdfdfsdf
+                  <h5 class="hide">Написания скритов и алгоритмов.
+                    Люблю чистый код.
                   </h5>
                 </div>
               </div>
 
               <div class="card" id="loadPercent">
-                <h3 class="title">UX, UI</h3>
+                <h3 class="title">Frameworks</h3>
                 <div class="bar">
                   <h6 id="stringPercent" class="stylePercent">80%</h6>
                   <div class="emptybar"></div>
                   <div class="filledbar80"></div>
-                  <h5 class="hide">TRsdf sdf sdfsdfsd sdfsd dsf sdf sd fsdfdfsdf
+                  <h5 class="hide">
+                    <ul style="margin-left: 1em;">
+                      <li type="circle">Bootstrap</li>
+                      <li type="circle">jQuery</li>
+                      <li type="circle">AnimeJS</li>
+                      <li type="circle">etc</li>
+                    </ul>
                   </h5>
                 </div>
               </div>
@@ -474,18 +490,17 @@
           <div class="responsiveCardsMinWidth">
             <ul id="content-slider">
               <li>
-                <div class="cardSlider">
-                  <h3 class="title">UX, UI</h3>
-                  <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                    <h5 class="hide">TRsdf sdf sdfsdfsd sdfsd dsf sdf sd fsdfdfsdf
-                    </h5>
-                  </div>
-                </div>
+                <div class="cardSlider" id="cardClone"></div>
               </li>
               <li>
-                <div class="cardSlider">
+
+              </li>
+
+
+
+              <li>
+
+                <!-- <div class="cardSlider">
                   <h3 class="title">UX, UI</h3>
                   <div class="bar">
                     <div class="emptybar"></div>
@@ -493,13 +508,15 @@
                     <h5 class="hide">TRsdf sdf sdfsdfsd sdfsd dsf sdf sd fsdfdfsdf
                     </h5>
                   </div>
-                </div>
+                </div> -->
+
               </li>
+
             </ul>
           </div>
 
         </div>
-        <a class="btn btn-dark btn-xl js-scroll-trigger mt-5 services">What I Offer</a>
+        <a class="btn btn-dark btn-xl js-scroll-trigger mt-5 services lang" key="skills2" >What I Offer</a>
       </div>
     </div>
   </div>
@@ -673,7 +690,7 @@
       <div class="containergooey container text-center">
         <div class="button" id="contactbutton">Get in touch</div>
         <div class="social-btns" id="falldownone">
-          <a class="btn envelope" href="mailto:slavakittel@gmail.com">
+          <a class="btn envelope" id="mailto" href="mailto:slavakittel@gmail.com">
             <i class="fa fa-envelope" id="contactmail"></i></a>
           <span class="popUpMail" id="falldownfive">Click to copy my email to clipboard</span>
         </div>
@@ -761,7 +778,7 @@
 
       setTimeout(function () {
         $('body').addClass('loaded');
-      }, 4200); //4200
+      }, 0); //4200
 
     });
   </script>
@@ -975,11 +992,11 @@
 
     // On click, get href and remove 'mailto:'
     // Store email address in a variable.
-    var mailto = $('.btn');
+    let mailto = $('#mailto');
 
     mailto.click(function () {
-      var href = $(this).attr('href');
-      var email = href.replace('mailto:', '');
+      let href = $(this).attr('href');
+      let email = href.replace('mailto:', '');
       copyToClipboard(email);
       console.log('copy email');
     });
@@ -987,7 +1004,7 @@
     // Grabbed this from Stack Overflow.
     // Copies the email variable to clipboard
     function copyToClipboard(text) {
-      var dummy = document.createElement("input");
+      let dummy = document.createElement("input");
       document.body.appendChild(dummy);
       dummy.setAttribute('value', text);
       dummy.select();
@@ -1057,8 +1074,19 @@
       stringPercent1.style.paddingLeft = -50 + 'px';
     };
 
+    // <!-- /* ----- Start Cards CLONE ----- */ -->
+
+  let divClone = document.getElementById('cloneTest'),
+      clone = divClone.cloneNode(true); // true means clone all childNodes and all event handlers
+    console.log(divClone);
+    clone.id = "cardClone";
+    document.getElementById("cardClone").appendChild(clone);
+    
+    // <!-- /* ----- End Cards CLONE ----- */ -->
 
   </script>
+
+  <!-- /* ----- End Cards ----- */ -->
 
 </body>
 

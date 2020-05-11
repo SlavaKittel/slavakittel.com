@@ -4,9 +4,13 @@ var arrLang = {
 
         'about': 'About',
         'about1': 'Hi, I’m Slava. Nice to meet you!',
-        'about2': 'GHH hskdjf hsdfh ksjd fhkjsdh fkjsdh fksjdf skjd f',
+        'about2':  'After 10 years of experience as an engineer in the construction industry, I recently entered into the Frontend Development and Design industry, I realized that this is my element for years to come. With strong motivation, everyone can be the best!',
         
         'skills': 'Skills',
+        'skills1': 'My skills',
+        'skills2': 'What I Offer',
+        'skills3': 'UX UI Design',
+        'skills4': 'High understanding of the interacting user with the product!',
         
         'servicers': 'Services',
         
@@ -27,7 +31,11 @@ var arrLang = {
         'about2': 'После 10 летнего опыта инженером в строительной сфере я не так давно ворвался в индустрию разроботки фронтенда и дизайна, я понял что это моя стихия и мое любимое дело на много лет вперед. Имея сильную мотивацию каждый может стать лучшим!',
         
         'skills': 'Опыт',
-        
+        'skills1': 'Мой опыт',
+        'skills2': 'Что я предлагаю',
+        'skills3': 'UX UI Дизайн',
+        'skills4': 'Высокое понимание взаимодестивя пользователя с продуктом!',
+
         'servicers': 'Услуги',
         
         'portfolio': 'Портфолио',
