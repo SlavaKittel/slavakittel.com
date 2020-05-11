@@ -690,6 +690,7 @@ img {
   text-align: left;
   transition: opacity 0.4s ease-out;
   opacity: 0.1;
+  padding-top: 10px;
 }
 
 .card:hover .hide {
@@ -747,22 +748,6 @@ img {
   height: 100%;
 }
 
-.filledbar80 {
-  position: absolute;
-  top: 27.2px;
-  z-index: 3;
-  width: 0px;
-  height: 100%;
-  background: rgb(0, 154, 217);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 154, 217, 1) 0%,
-    rgba(217, 147, 0, 1) 65%,
-    rgba(255, 186, 0, 1) 100%
-  );
-  transition: 0.6s ease-out;
-}
-
 .filledbar40 {
   position: absolute;
   top: 27.2px;
@@ -779,11 +764,103 @@ img {
   transition: 0.6s ease-out;
 }
 
-.card:hover .filledbar80 {
-  width: 80%;
+.filledbar50 {
+  position: absolute;
+  top: 27.2px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0, 154, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 154, 217, 1) 0%,
+    rgba(217, 147, 0, 1) 65%,
+    rgba(255, 186, 0, 1) 100%
+  );
+  transition: 0.6s ease-out;
 }
+
+.filledbar60 {
+  position: absolute;
+  top: 27.2px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0, 154, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 154, 217, 1) 0%,
+    rgba(217, 147, 0, 1) 65%,
+    rgba(255, 186, 0, 1) 100%
+  );
+  transition: 0.6s ease-out;
+}
+
+.filledbar70 {
+  position: absolute;
+  top: 27.2px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0, 154, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 154, 217, 1) 0%,
+    rgba(217, 147, 0, 1) 65%,
+    rgba(255, 186, 0, 1) 100%
+  );
+  transition: 0.6s ease-out;
+}
+
+.filledbar90 {
+  position: absolute;
+  top: 27.2px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0, 154, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 154, 217, 1) 0%,
+    rgba(217, 147, 0, 1) 65%,
+    rgba(255, 186, 0, 1) 100%
+  );
+  transition: 0.6s ease-out;
+}
+
+.filledbar100 {
+  position: absolute;
+  top: 27.2px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0, 154, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 154, 217, 1) 0%,
+    rgba(217, 147, 0, 1) 65%,
+    rgba(255, 186, 0, 1) 100%
+  );
+  transition: 0.6s ease-out;
+}
+
 .card:hover .filledbar40 {
   width: 40%;
+}
+.card:hover .filledbar50 {
+  width: 50%;
+}
+.card:hover .filledbar60 {
+  width: 60%;
+}
+.card:hover .filledbar70 {
+  width: 70%;
+}
+.card:hover .filledbar90 {
+  width: 90%;
+}
+.card:hover .filledbar100 {
+  width: 100%;
 }
 
 .stylePercent {
