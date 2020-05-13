@@ -436,8 +436,8 @@ img {
   background: #0e76a8;
 }
 
-.instagram {
-  background: #dd2a7b;
+.github {
+  background: #211F1F;
 }
 
 .clicked {
@@ -518,22 +518,15 @@ img {
   background-color: #0e76a8;
 }
 
-.social-btns .btn:focus .fa.fa-instagram,
-.social-btns .btn:hover .fa.fa-instagram {
-  color: #dd2a7b !important;
+.social-btns .btn:focus .fa.fa-github,
+.social-btns .btn:hover .fa.fa-github {
+  color: #211F1F;
 }
-.social-btns .btn.instagram.fa {
-  background-color: #fcfcfc;
+.social-btns .btn.github .fa {
+  color: #fcfcfc;
 }
-.social-btns .btn.instagram {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
+.social-btns .btn.github {
+  background-color: #211F1F;
 }
 
 .social-btns .btn:focus:before,
