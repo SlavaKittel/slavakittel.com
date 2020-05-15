@@ -11,6 +11,16 @@ var arrLang = {
         'skills2': 'What I Offer',
         'skills3': 'UX UI Design',
         'skills4': 'High understanding of the interacting user with the product!',
+        'skills6': 'Sport',
+        'skills7': '',
+        'skills8': 'Illustrator',
+        'skills9': 'The necessary knowledge to solve non-complex illustrations.',
+        'skills10': 'Writing scripts and algorithms. I love clean code.',
+        'skills11': '',
+        'skills12': '',
+        'skills13': '',
+        'skills14': '',
+        'skills15': '',
         
         'servicers': 'Services',
         
@@ -35,6 +45,18 @@ var arrLang = {
         'skills2': 'Что я предлагаю',
         'skills3': 'UX UI Дизайн',
         'skills4': 'Высокое понимание взаимодестивя пользователя с продуктом!',
+        'skills5': 'Как рыба в воде.',
+        'skills6': 'Спорт',
+        'skills7': '',
+        'skills8': 'Иллюстратор',
+        'skills9': 'Необходимые знания для решения не сложных иллюстраций',
+        'skills10': 'Написания скритов и алгоритмов. Люблю чистый код.',
+        'skills11': '',
+        'skills12': '',
+        'skills13': '',
+        'skills14': '',
+        'skills15': '',
+
 
         'servicers': 'Услуги',
         
