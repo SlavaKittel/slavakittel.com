@@ -220,15 +220,15 @@ h6 {
 }
 
 .service-icon {
-  background-color: #1D809F;
-  color: rgb(154, 203, 218);
+  background-color: #fbfbfb;
+  color: rgb(88, 97, 233);
   height: 7rem;
   width: 7rem;
   display: block;
   line-height: 7.5rem;
   font-size: 2.25rem;
   -webkit-box-shadow: 0 50px 50px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: -1px 0px 20px 0px #25383a;
+  box-shadow: -1px 0px 15px 5px #15808b;
   border-radius: 10px;
 }
 

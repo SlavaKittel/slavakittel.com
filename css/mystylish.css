@@ -674,7 +674,7 @@ img {
 .containerCard {
   position: relative;
   height: 350px;
-  width: 400px;
+  width: 500px;
   top: 60px;
   left: calc(60% - 300px);
   display: flex;
@@ -865,6 +865,12 @@ img {
 /* Cards Slider Mode */
 
 .cardSlider {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.cardSmallSlider {
   display: flex;
   justify-content: center;
   padding: 40px;
