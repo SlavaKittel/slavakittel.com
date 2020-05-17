@@ -47,6 +47,30 @@ var logoAnimation = (function() {
         },
         0
       )
+
+      .add(
+        {
+          targets: ".fill.onText",
+          strokeDashoffset: {
+            value: [anime.setDashoffset, 0],
+            duration: 300,
+            delay: function(el, i, t) {
+              return 100 + i * 300
+            },
+            easing: "linear"
+          },
+          opacity: {
+            value: 0,
+            duration: 1,
+            delay: function(el, i, t) {
+              return 10000;
+            }
+          }
+        },
+        0
+      )
+
+
       .add(  // DELETE
         {
           targets: ".fill.in",

@@ -263,10 +263,10 @@ img {
 
 #containerSlider {
   position: absolute;
-  width: 80vh;
-  height: 70vh;
-  max-width: 90vw;
-  max-height: 78.7vw;
+  width: 80vh;           /* width: 80vh; */
+  height: 75.5vh;          /* height: 70vh; */
+  max-width: 90vw;       /* max-width: 90vw; */
+  max-height: 85vw;    /* max-height: 78.7vw; */
   top: 0;
   left: 0;
   right: 0;
@@ -283,10 +283,10 @@ img {
 
 #containerSlider2 {
   position: absolute;
-  width: 80vh;
-  height: 70vh;
-  max-width: 90vw;
-  max-height: 78.7vw;
+  width: 80vh;           /* width: 80vh; */
+  height: 75.5vh;          /* height: 70vh; */
+  max-width: 90vw;       /* max-width: 90vw; */
+  max-height: 85vw;    /* max-height: 78.7vw; */
   top: 0;
   left: 0;
   right: 0;
@@ -663,8 +663,8 @@ img {
 .loaded #loader-wrapper {
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all 4s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 4s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  /* -webkit-transition: all 4s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); */
+  transition: all 2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 /* ----- End Logo Screen Saver ----- */
@@ -695,7 +695,7 @@ img {
   display: flex;
   height: 280px;
   width: 200px;
-  background-color: #1d809f;
+  background-color: #2b8b97;
   border-radius: 10px;
   box-shadow: -1px 0px 20px 0px #25383a;
   /*   margin-left: -50px; */
