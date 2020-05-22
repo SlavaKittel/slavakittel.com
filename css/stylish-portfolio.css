@@ -281,9 +281,9 @@ h6 {
 }
 
 .portfolio-item .caption .caption-content {
-  color: rgb(133, 196, 196);
+  color: rgb(0, 0, 0);
   margin: auto 2rem 1rem;
-  text-shadow: 1px 1px 1px rgb(26, 26, 26);
+  /* text-shadow: 1px 1px 1px rgb(26, 26, 26); */
 }
 
 .portfolio-item .caption .caption-content h2 {
