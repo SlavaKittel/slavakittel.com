@@ -35,8 +35,18 @@ var arrLang = {
 
         
         'portfolio': 'Portfolio',
+        'portfolio1': 'Portfolio',
+        'portfolio2': 'Recent Projects',
+        'portfolio3': 'Flexibale and modern business card site',
+        'portfolio4': 'Fast and stylish site for Yoga',
+        'portfolio5': 'SVG dynamic animation example',
+        'portfolio6': 'So Soon as..',
+
         
         'contact': 'Contact',
+        'contact1': 'Get in touch',
+        'contact2': 'Click to copy my email to clipboard',
+        'contact3': 'Yeah! You saved email to clipboard',
         
         'english': 'EN',
         
@@ -78,8 +88,17 @@ var arrLang = {
         'servicers10': 'Добавь движения, привлеки клиента',
         
         'portfolio': 'Портфолио',
+        'portfolio1': 'ПОРТФОЛИО',
+        'portfolio2': 'Недавние проекты',
+        'portfolio3': 'Гибкий и современный сайт визитка',
+        'portfolio4': 'Быстрый и стильный сайт для Йоги',
+        'portfolio5': 'Пример динамической анимации при помощи SVG',
+        'portfolio6': 'В скором времени..',
         
         'contact': 'Контакт',
+        'contact1': 'Сяжись со мной',
+        'contact2': 'Кликни чтобы скопировать почту в буфер обмена',
+        'contact3': 'Да! Вы скопировали почту в буфер обмена',
         
         'english': 'EN',
         
