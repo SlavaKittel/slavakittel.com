@@ -48,7 +48,7 @@
   <body id="page-top">
     <!-- Start Logo Screen Saver-->
 
-    <div id="loader-wrapper">
+    <!-- <div id="loader-wrapper">
     <div class="loader-section">
       <div class="logo-animation">
         <div id="containerSlider2">
@@ -148,7 +148,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
     <!-- End Logo Screen Saver-->
 
@@ -713,52 +713,30 @@
         <div class="containergooey container text-center">
           <div class="button lang" id="contactbutton" key="contact1">Get in touch</div>
           <div class="social-btns" id="falldownone">
-            <a
-              class="btn envelope"
-              id="mailto"
-              href="mailto:slavakittel@gmail.com"
-            >
-              <i class="fa fa-envelope" id="contactmail"></i
-            ></a>
-            <span class="popUpMail lang" id="falldownfive" key="contact2"
-              >Click to copy my email to clipboard</span
-            >
+            <a class="btn envelope" id="mailto" href="mailto:slavakittel@gmail.com">
+              <i class="fa fa-envelope" id="contactmail"></i></a>
+            <span class="popUpMail lang" id="falldownfive" 
+            key="contact2">Click to copy my email to clipboard</span>
+            <span class="lang" id="CopedEmailText" 
+            key = "contact3">Yeah! You saved email to clipboard</span>
           </div>
           <div class="social-btns" id="falldowntwo">
-            <a
-              class="btn facebook"
-              href="https://www.facebook.com/radcheg?ref=bookmarks"
-            >
-              <i class="fa fa-facebook"></i
-            ></a>
+            <a class="btn facebook" href="https://www.facebook.com/radcheg?ref=bookmarks">
+              <i class="fa fa-facebook"></i></a>
           </div>
           <div class="social-btns" id="falldownthree">
             <a class="btn linkedin" href="https://linkedin.com/in/slavakittel">
-              <i class="fa fa-linkedin"></i
-            ></a>
+              <i class="fa fa-linkedin"></i></a>
           </div>
           <div class="social-btns" id="falldownfour">
-            <a
-              class="btn github"
-              href="https://github.com/SlavaKittel?tab=repositories"
-            >
-              <i class="fa fa-github"></i
-            ></a>
+            <a class="btn github" href="https://github.com/SlavaKittel?tab=repositories">
+              <i class="fa fa-github"></i></a>
           </div>
           <svg style="display: none;">
             <defs>
               <filter id="goo">
-                <feGaussianBlur
-                  in="SourceGraphic"
-                  stdDeviation="8"
-                  result="blur"
-                />
-                <feColorMatrix
-                  in="blur"
-                  mode="matrix"
-                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                  result="goo"
-                />
+                <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
                 <feBlend in="SourceGraphic" in2="goo" />
               </filter>
             </defs>
@@ -812,7 +790,7 @@
 
       setTimeout(function () {
         $('body').addClass('loaded');
-      }, 3000); //4200
+      }, 3000); //3000
 
     });
   </script>
@@ -1005,8 +983,10 @@
       };
 
       contactmail.onclick = function () {
-        document.getElementById("falldownfive").innerHTML =
-          "Yeah! You saved email to clipboard";
+        // document.getElementById("falldownfive").innerHTML =
+        //   "Yeah! You saved email to clipboard";
+        let x = document.getElementById("CopedEmailText").innerText;
+        document.getElementById("falldownfive").innerHTML = x;
         falldownfive.style.backgroundColor = "rgb(56, 185, 185)";
       };
 
