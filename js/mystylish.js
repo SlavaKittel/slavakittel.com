@@ -187,7 +187,7 @@ var logoAnimation = (function() {
       )
 
     function init() {
-      document.body.classList.add("ready");
+      // document.body.classList.add("readyDown");
       logoTimeline.play();
     }
     return {
