@@ -80,12 +80,12 @@ let logoAnimation = (function Logo() {
       };
 })();
 
-// window.onload = function () {
-//   logoAnimation.init();
-// };
+window.onload = function () {
+  logoAnimation.init();
+};
 
 // setTimeout(function(){logoAnimation.onload()}, 3000);
 
-document.getElementById("button").onclick = function() {
-    return logoAnimation.init();;
-};
+// document.getElementById("button").onclick = function() {
+//     return logoAnimation.init();;
+// };

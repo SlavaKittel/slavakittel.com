@@ -48,6 +48,8 @@
   <body id="page-top">
     <!-- Start Logo Screen Saver-->
 
+<div class="loadedUp">
+
     <div id="loader-wrapper">
     <div class="loader-section">
       <div class="logo-animation">
@@ -150,6 +152,8 @@
       </div>
     </div>
   </div>
+
+
 
     <!-- End Logo Screen Saver-->
 
@@ -746,6 +750,8 @@
       </footer>
     </div>
 
+  </div>
+
     <!-- End Contact -->
 
     <!-- Scroll to Top Button-->
@@ -792,6 +798,12 @@
       setTimeout(function () {
         $('body').addClass('loaded');
       }, 3000); //3000
+
+      setTimeout(function () {
+        $('div').removeClass("loadedUp");
+        console.log("test");
+      }, 1000); //4200
+
 
     });
   </script>

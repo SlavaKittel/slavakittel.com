@@ -17,11 +17,11 @@
 </head>
 
 <body>
-  <button id="button" >Reset</button>
-
-   <div > <!-- id="loader-wrapper" -->
-    <div ><!-- class="loader-section" -->
-      <div ><!-- class="logo-animation" -->
+  <div class="loadedUp">
+    <div id="loader-wrapper">
+      <button id="button" class="testFotText">Reset</button>
+    <div class="">
+      <div class="">
         <div id="containerSlider2">
           <svg id="Layer_1" data-name="Layer 1"  viewBox="0 0 524.25 493.25">
             <defs>
@@ -120,22 +120,29 @@
       </div>
     </div>
   </div>
+</div>
   <script src="js/animeLogo.min.js"></script>
   <script src="js/mystylishLogo.js"></script>
   <script src="js/jquery-1.9.1Logo.min.js"></script>
   <script>
-    // $(document).ready(function () {
+    $(document).ready(function () {
 
-    //   setTimeout(function () {
-    //     $('body').addClass('loaded');
-    //   }, 2000); //4200
+      setTimeout(function () {
+        $('body').addClass('loaded');
+        console.log("test2");
+      }, 2000); //4200
+
+      setTimeout(function () {
+        $('div').removeClass("loadedUp");
+        console.log("test");
+      }, 1000); //4200
 
     // });
     // $(document).ready(function () {
 
     //   setTimeout(logoAnimation, 7000);
 
-    // });
+    });
   </script>
 </body>
 
