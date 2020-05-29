@@ -190,11 +190,11 @@ var logoAnimation = (function() {
       document.body.classList.add("ready");
       logoTimeline.play();
     }
-
     return {
       init: init
     };
   })();
+
 
   window.onload = function() {
     logoAnimation.init();
