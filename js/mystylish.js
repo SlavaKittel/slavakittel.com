@@ -5,10 +5,10 @@
 'use strict';
 
 var logoAnimation = (function() {
-    var logoEl = document.querySelector(".logo-animation");
-    var pathEls = document.querySelectorAll(
-      ".logo-animation path:not(.icon-curve)"
-    );
+    // var logoEl = document.querySelector(".logo-animation");
+    // var pathEls = document.querySelectorAll(
+    //   ".logo-animation path:not(.icon-curve)"
+    // );
     var innerWidth = window.innerWidth;
     var maxWidth = 740;
     var logoScale = innerWidth <= maxWidth ? innerWidth / maxWidth : 1;
@@ -20,10 +20,10 @@ var logoAnimation = (function() {
 
     // logoEl.style.transform = "translateY(50px) scale(" + logoScale + ")";
 
-    for (var i = 0; i < pathEls.length; i++) {
-      var el = pathEls[i];
-      el.setAttribute("stroke-dashoffset", anime.setDashoffset(el));
-    }
+    // for (var i = 0; i < pathEls.length; i++) {
+    //   var el = pathEls[i];
+    //   el.setAttribute("stroke-dashoffset", anime.setDashoffset(el));
+    // }
 
     logoTimeline
       .add(
