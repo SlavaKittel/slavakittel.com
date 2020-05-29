@@ -71,7 +71,7 @@ let logoAnimation = (function Logo() {
         );
 
       function init() {
-        document.body.classList.add("ready");
+        // document.body.classList.add("ready");
         logoTimeline.play();
       }
 
