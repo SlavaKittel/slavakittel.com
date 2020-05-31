@@ -3,9 +3,9 @@ var arrLang = {
         'home': 'Home',
 
         'about': 'About',
-        'about1': "Hi, my name is Slava, I'm an Fronted Developer. Nice to meet you!",
-        'about2': 'If you are looking for front-end development or UX / UI design you have come to the right place.',
-        'about3': 'After 10 years of experience as an engineer in the construction industry, I recently entered into the Frontend Development and Design industry, I realized that this is my element for years to come. With strong motivation, everyone can be the best!',
+        'about1': "Hi! My name is Slava. I'm a frontend developer. Nice to meet you!",
+        'about2': 'If you are looking for frontend development or UX / UI design you come to the right place.',
+        'about3': 'After 10 years of experience as an engineer in the construction industry I recently entered into the frontend development and design industry. I realized that this is my favorite part for many years. With strong motivation everyone can be the best!',
 
         'skills': 'Skills',
         'skills1': 'My skills',
@@ -14,7 +14,7 @@ var arrLang = {
         'skills4': 'High understanding of the interacting user with the product!',
         'skills5': 'Like a wish in water',
         'skills6': 'Sport',
-        'skills7': "Disc Golf, Snooker, Volleyball, MTB Bike - Caution I'm Contagious!",
+        'skills7': "Disc Golf, Snooker, Volleyball, MTB Bike Riding. Guys it's contagious!",
         'skills8': 'Illustrator',
         'skills9': 'The necessary knowledge to solve non-complex illustrations.',
         'skills10': 'Writing scripts and algorithms. I love clean code.',
@@ -38,7 +38,7 @@ var arrLang = {
         'portfolio1': 'Portfolio',
         'portfolio2': 'Recent Projects',
         'portfolio3': 'Flexibale and modern business card site',
-        'portfolio4': 'Fast and stylish site for Yoga',
+        'portfolio4': 'Fast and stylish site for yoga',
         'portfolio5': 'SVG dynamic animation example',
         'portfolio6': 'So Soon as..',
 
@@ -57,9 +57,9 @@ var arrLang = {
         'home': 'Домой',
         
         'about': 'Обо мне',
-        'about1': 'Привет, меня зовут Слава и я Фронт-энд разработчик. Будем знакомы!',
-        'about2': 'Если вы вы ищите услуги по Фронт-энд разработке или UX/UI дизайну вы попали в нужно место.',
-        'about3': 'После 10 летнего опыта инженером в строительной сфере я не так давно ворвался в индустрию разроботки фронтенда и дизайна, я понял что это моя стихия и мое любимое дело на много лет вперед. Имея сильную мотивацию каждый может стать лучшим!',
+        'about1': 'Привет, меня зовут Слава и я фронтэнд разработчик. Будем знакомы!',
+        'about2': 'Если вы ищите услуги по фронтэнд разработке или UX/UI дизайну, вы попали в нужное место.',
+        'about3': 'После 10 летнего опыта инженером в строительной сфере я не так давно ворвался в индустрию разроботки фронтенда и дизайна. Я понял, что это моя стихия и мое любимое дело на много лет вперед. Имея сильную мотивацию, каждый может стать лучшим!',
 
         'skills': 'Опыт',
         'skills1': 'Мой опыт',
@@ -68,7 +68,7 @@ var arrLang = {
         'skills4': 'Высокое понимание взаимодестивя пользователя с продуктом!',
         'skills5': 'Как рыба в воде',
         'skills6': 'Спорт',
-        'skills7': 'Диск гольф, Снукер, Волейбол, MTB велосипед - осторожно я заразен!',
+        'skills7': 'Диск гольф, Снукер, Волейбол, MTB байк. Ребята это заразно!',
         'skills8': 'Иллюстратор',
         'skills9': 'Необходимые знания для решения не сложных иллюстраций',
         'skills10': 'Написания скритов и алгоритмов. Люблю чистый код.',
@@ -91,7 +91,7 @@ var arrLang = {
         'portfolio1': 'ПОРТФОЛИО',
         'portfolio2': 'Недавние проекты',
         'portfolio3': 'Гибкий и современный сайт визитка',
-        'portfolio4': 'Быстрый сайт для Йоги',
+        'portfolio4': 'Быстрый сайт для йоги',
         'portfolio5': 'Пример динамической анимации при помощи SVG',
         'portfolio6': 'В скором времени..',
         
