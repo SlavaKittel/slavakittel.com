@@ -106,6 +106,7 @@ var arrLang = {
     }
   };
 
+  
   // Process translation
   $(function() {
     $('.translate').click(function() {
