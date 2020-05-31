@@ -16,7 +16,7 @@ var arrLang = {
         'skills6': 'Sport',
         'skills7': "Disc Golf, Snooker, Volleyball, MTB Bike Riding. Guys it's contagious!",
         'skills8': 'Illustrator',
-        'skills9': 'The necessary knowledge to solve non-complex illustrations.',
+        'skills9': 'The necessary knowledge to solve a non-complex illustrations.',
         'skills10': 'Writing scripts and algorithms. I love clean code.',
         'skills11': 'etc',
         
